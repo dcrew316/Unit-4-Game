@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="assets/javascript.js"></script>
+<title>Unit 4 Game</title>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+                <h1 class="text-center">Rupee Collector</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four Rupees below. By clicking on the Rupee you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+            <p>The value of each rupee is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the values of each Rupee.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 rupees">
+            <p class="sub">Click On A Rupee To Begin</p>
+            <img src="assets/redgem.jpg" id="red" width="90" height="100" alt="Red Rupee"/>
+            <img src="assets/bluegem.jpg" id="blue" width="95" height="100" alt="Blue Rupee"/>
+            <img src="assets/purplegem.jpg" id="purple" width="100" height="100" alt="Purple Rupee"/>
+            <img src="assets/greengem.jpg" id="green" width="100" height="100" alt="GreenRupee"/>
+        </div>
+        <div class="col-md-12 ScoreCard">
+            <p class="sub2">Number To Win:</p> <span id="randomNumber" class="score"></span>
+            <p class="sub2">Your Score:</p> <span id="totalScore" class="score"></span>
+            <p class="sub2">Wins:</p> <span id="numberOfWins" class="score"></span>
+            <p class="sub2">Losses</p> <span id="numberOfLosses" class="score"></span>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>
